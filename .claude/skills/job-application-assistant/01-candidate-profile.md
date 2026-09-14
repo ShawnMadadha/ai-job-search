@@ -34,6 +34,9 @@ Remote
 - Co-founded and led all engineering for an AI-native GTM platform that acts as a digital twin for B2B sales teams, automating outbound, surfacing high-intent buyers, and managing pipeline through natural-language commands
 - Grew the platform to 3,000+ companies, 350M+ enriched leads, and $20B+ in managed pipeline; owned core technical architecture and performance monitoring end to end
 - Built and monitored on Next.js 15, TypeScript, and Tailwind v4 with a pnpm monorepo backend running Drizzle over Aurora Serverless v2 Postgres, SQS/Lambda event pipelines with DLQs, SSE row streaming, and AWS CDK with OpenTelemetry for infrastructure and observability
+- Owned the programmatic email delivery layer end to end on a third-party agent-inbox provider API: per-account inbox provisioning, domain warm-up and placement, send-rate ramps tied to inbox age, and per-account daily caps
+- Diagnosed a class of silent send failures where the provider rejected messages and the response was discarded, leaving contacts retried indefinitely; also rebuilt bounce recording and auto-suppression so undeliverable addresses stopped being sent to
+- Hit the provider's inbox capacity ceiling in production and built multi-key pooling plus a fallback path to user-owned Gmail and Outlook inboxes so onboarding never blocked on provider capacity
 
 ### Technology Specialist (Contract) - Orlando Health (Oct 2025 - Dec 2025)
 Orlando, FL
