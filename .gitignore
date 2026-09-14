@@ -121,3 +121,6 @@ company_research/*.json
 # These render the profile directly, so they must never reach the public fork.
 tools/build_cv.py
 tools/build_cover.py
+
+# Application-form answer sheets (contain personal details)
+application_forms/
