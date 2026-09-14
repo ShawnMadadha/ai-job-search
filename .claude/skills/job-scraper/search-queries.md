@@ -11,6 +11,8 @@ Target: **immediate Fall 2026 starts** (full-time, contract, or part-time) as th
 **Enabled for this profile:** `linkedin-search`, `freehire-search` (both country-agnostic).
 **Disabled deliberately:** `jobindex-search`, `jobbank-search`, `jobdanmark-search`, `jobnet-search` - these are Denmark-only demos and cost nothing while disabled. Leave them off unless the target market changes.
 
+**freehire-search scoping (required).** freehire crawls whole company career pages, so an unscoped query returns sales, clinical and operations postings alongside engineering. Always pass the US region and a category facet: `--region us --category backend,fullstack,ml_ai,devops`, adding `--remote remote` when remote-only is wanted, and prefer a role-shaped `-q` ("founding engineer", "AI engineer") over a bare word like "intern". Evidence: a 2026-09-13 run using `-q "intern" --region us` with no category returned two nursing postings and six sales roles inside 25 results. Use `--no-description` for the discovery pass, then `detail <slug>` on the shortlist.
+
 The `site:` query templates in this file are the **WebSearch fallback** - for portals without a CLI, company career pages, or when a CLI fails.
 
 **Language scope:** English only. Shawn's CLAUDE.md Languages table lists English (Native) and nothing else, so every query below is written in English and no translated variants are needed. A posting that requires any other language **as a job condition** is excluded before scoring by `04-job-evaluation.md`'s Language Gate, which is the single source of truth for that rule.
@@ -64,6 +66,20 @@ site:linkedin.com/jobs "AI engineer" remote "member of technical staff"
 site:wellfound.com "full stack engineer" remote seed OR "pre-seed"
 site:linkedin.com/jobs "forward deployed engineer" remote
 site:ycombinator.com/companies jobs "founding engineer" remote
+```
+
+**GTM / growth engineering.** A separate job family, and the closest title match in his record: Chronos
+*was* an AI-native GTM platform (signal-based targeting, automated outbound, pipeline). These roles sit at
+the marketing/engineering seam and are rarely reachable by a generic "software engineer" query, so they
+need their own lines.
+
+```
+site:linkedin.com/jobs "GTM engineer" OR "go-to-market engineer" remote OR "New York" OR "San Francisco"
+site:linkedin.com/jobs "growth engineer" remote United States
+site:jobs.ashbyhq.com "growth engineer" OR "GTM engineer"
+site:wellfound.com "growth engineer" remote
+site:linkedin.com/jobs "forward deployed engineer" OR "AI field engineer" remote
+site:jobs.lever.co "forward deployed engineer"
 ```
 
 Contract and part-time variants for the same tier:
