@@ -116,3 +116,8 @@ company_research/*.json
 
 # Brainstorm mockups (superpowers visual companion) - never ship
 .superpowers/
+
+# Personal-data-bearing CV/cover-letter generators (name, phone, email, full history).
+# These render the profile directly, so they must never reach the public fork.
+tools/build_cv.py
+tools/build_cover.py

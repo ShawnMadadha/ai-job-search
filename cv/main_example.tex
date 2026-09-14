@@ -1,8 +1,9 @@
-%% Example CV - [YOUR_NAME]
+%% Master reference CV - Shawn Madadha
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
+%% Tailored CVs (cv/main_<company>_<role>.tex) must be cut to exactly 2 pages;
+%% this master file is deliberately longer and is not submitted anywhere.
 %%
-%% SETUP: Run /setup to populate this with your actual information.
 %% Compile with: lualatex main_example.tex
 %% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
 
@@ -33,7 +34,7 @@
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Shawn Madadha - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -43,13 +44,13 @@
 \usepackage{import}
 
 % personal data
-\name{[First]}{[Last]}
+\name{Shawn}{Madadha}
 % If you have no address to list, DELETE this whole line. \address{}{}{} fails
 % with "There's no line here to end" on every moderncv version.
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\address{Inlet Beach, Florida, USA}{}{}
+\phone[mobile]{(205) 981-3910}
+\email{shawn4speed@gmail.com}
+\extrainfo{\href{https://linkedin.com/in/shawnmadadha}{LinkedIn}, \href{https://github.com/ShawnMadadha}{GitHub}}
 
 \begin{document}
 
@@ -60,7 +61,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Computer Science undergraduate at the University of Florida (3.8 GPA, BS expected May 2028) who has been shipping and operating production software since age 14. Currently Co-Founder and CTO of Geodo, where I own the end-to-end architecture of an AI-native go-to-market platform serving 3,000+ companies across 350M+ enriched leads, built on Next.js 15, TypeScript, and AWS. Prior production experience spans enterprise IT in a hospital network, multi-agent AI systems, and nine years of founder-side commercial ownership. Strongest in full-stack TypeScript and Python, AI agent engineering, and cloud infrastructure I have had to keep running myself.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -70,15 +71,17 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{Languages}: Python, TypeScript, JavaScript, SQL, C, C++, C\#, Java, Swift, HTML5, CSS, PowerShell.
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Frontend \& Full-Stack}: Next.js 15, React, Tailwind v4, TanStack Query, Zod, SwiftUI, SSE streaming, pnpm monorepos.
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{Backend \& Data}: FastAPI, Drizzle ORM, PostgreSQL on Aurora Serverless v2, event-driven pipelines with SQS/Lambda and dead-letter queues, Vitest.
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{AI \& Agent Engineering}: Gemini 2.0 and 2.0 Flash, Google ADK multi-agent orchestration, LangChain, ElevenLabs Multilingual v3 streaming, OpenCV, MediaPipe, YOLO, depth estimation. Daily development with Claude Code for agentic coding.
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Cloud \& Infrastructure}: AWS (Aurora Serverless v2, Lambda, SQS, CDK, Secrets Manager), OpenTelemetry instrumentation and production observability, Google Cloud, Firebase, Twilio, Active Directory, ESP32 embedded.
+
+\item \textbf{Commercial \& Analytical}: P\&L ownership, dynamic pricing, business analysis, data analysis, client scoping and retention, SAP S/4HANA, Microsoft Office Suite.
 
 \end{itemize}
 
@@ -91,31 +94,73 @@
 \begin{itemize}
 
 % --- Most Recent Role ---
-\item{\cventry{[YYYY-Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{2026-Present}{Co-Founder \& Chief Technology Officer}{Geodo}{Remote}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1 - be specific, use numbers where possible]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
-    \item {[Achievement or responsibility 4]}
+    \item {Co-found and lead all engineering for an AI-native GTM platform acting as a digital twin for B2B sales teams, automating outbound, surfacing high-intent buyers, and managing pipeline through natural-language commands.}
+    \item {Grew to 3,000+ companies on the platform, with 350M+ enriched leads and \$20B+ in managed pipeline.}
+    \item {Own core technical architecture and performance monitoring end to end.}
+    \item {Built on Next.js 15, TypeScript, and Tailwind v4 with a pnpm monorepo backend running Drizzle over Aurora Serverless v2 Postgres, SQS/Lambda event pipelines with DLQs, SSE row streaming, and AWS CDK with OpenTelemetry for infrastructure and observability.}
 \end{itemize}}}
 
 \vspace{3pt}
 
 % --- Previous Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{2025}{Technology Specialist (Contract)}{Orlando Health}{Orlando, FL}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
+    \item {Administered and monitored network infrastructure across 3 hospital campuses using Active Directory and remote management tools, maintaining 99.9\% uptime for systems serving 2,000+ medical staff.}
+    \item {Automated routine maintenance with Python and PowerShell scripts, reducing manual workload by 15 hrs/week.}
+    \item {Resolved 50+ support tickets within SLA windows.}
 \end{itemize}}}
 
 \vspace{3pt}
 
 % --- Earlier Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{2023-2026}{Co-Founder}{R3 Vacations}{Florida}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
+    \item {Co-founded a short-term rental business operating 3 properties and built the company website and Airbnb listing pages, generating \$225K+ in gross booking revenue over 3 years.}
+    \item {Owned P\&L, dynamic pricing, guest operations, and vendor management, applying data analysis to drive year-over-year growth across the portfolio.}
+\end{itemize}}}
+
+\vspace{3pt}
+
+% --- Earliest Role ---
+\item{\cventry{2017-2026}{Founder}{Triune Tek, LLC}{Florida}{}{\vspace{1pt}
+\begin{itemize}
+    \item {Founded a web and AI automation studio at 14; delivered custom sites and lead generation for small-business clients end to end with a 100\% on-time delivery rate.}
+    \item {Ran the full commercial cycle solo, including business analysis, sourcing, scoping, building, and client retention.}
+    \item {Improved average client page load speed by 40\% through diagnostic audits and refactoring.}
+\end{itemize}}}
+
+\end{itemize}
+
+% ============================================================
+%     SELECTED PROJECTS
+% ============================================================
+
+\section{Selected Projects}
+\vspace{3pt}
+\begin{itemize}
+
+\item{\cventry{2026}{Bowser}{Autonomous pediatric therapy robot}{HackUSF 2026 winner}{}{\vspace{1pt}
+\begin{itemize}
+    \item {Designed the clinical application and co-built hardware for an autonomous Roomba 690 therapy robot using ESP32 and Roomba OI serial, enabling gamified pediatric rehabilitation through real-time pose tracking.}
+    \item {Integrated four Google ADK agents to orchestrate live audio input, hospital database lookups, and autonomous navigation using OpenCV, MediaPipe, YOLO, and depth estimation in a 36-hour sprint.}
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{2026}{Onyx Aura}{Autonomous voice AI for pharmacy calls}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item {Co-developed an autonomous voice AI using Twilio WebSockets and ElevenLabs Multilingual v3 streaming from Gemini 2.0, achieving sub-second response times during live pharmacy calls.}
+    \item {Engineered and validated a real-time safety pipeline that cross-referenced prescriptions against allergy profiles with Gemini 2.0 Flash, autonomously halting dangerous medications mid-conversation.}
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{2026}{Tarmac}{iOS travel app, team of 4}{}{}{\vspace{1pt}
+\begin{itemize}
+    \item {Led 4 developers building an iOS app using SwiftUI and Python/FastAPI with AI agents for delay explanation, city recommendations, and expense parsing.}
+    \item {Architected the backend API and managed weekly sprints, code reviews, and task delegation across the team.}
 \end{itemize}}}
 
 \end{itemize}
@@ -128,14 +173,14 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
+\item{\cventry{2026-2028}{Bachelor of Science in Computer Science}{University of Florida}{Gainesville, FL}{}{\vspace{1pt}
+GPA: 3.8/4.0. Expected graduation May 2028.
 }}
 
 \vspace{3pt}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
+\item{\cventry{2023-2025}{Associate of Arts}{Northwest Florida State College}{Niceville, FL}{}{\vspace{1pt}
+GPA: 3.8/4.0. Completed December 2025. President's List; Phi Theta Kappa Honor Society.
 }}
 
 \end{itemize}
@@ -147,27 +192,20 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 \section{Languages}
 \vspace{1pt}
 \begin{itemize}
-\item {[Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).}
+\item {English (native).}
 \end{itemize}
 
 % ============================================================
-%     PUBLICATIONS (optional)
-% ============================================================
-
-\section{Publications}
-\vspace{1pt}
-\begin{itemize}
-\item {[Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
+%     HONORS AND AWARDS
 % ============================================================
 
 \section{Honors and Awards}
 \vspace{1pt}
 \begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item{\textbf{2x Hackathon Winner} -- HackUSF 2026 and SASEHacks 2026.}
+\item{\textbf{4th of 20 teams} -- NSEC Florida Regional Sales Engineering Competition (2026).}
+\item{\textbf{President's List} -- Northwest Florida State College.}
+\item{\textbf{Phi Theta Kappa Honor Society} -- Northwest Florida State College.}
 \end{itemize}
 
 % ============================================================

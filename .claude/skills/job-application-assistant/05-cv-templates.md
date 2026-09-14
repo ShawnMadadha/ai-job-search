@@ -52,7 +52,7 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Shawn Madadha - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -62,13 +62,13 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
 \usepackage{import}
 
 % Personal data
-\name{[FIRST_NAME]}{[LAST_NAME]}
+\name{Shawn}{Madadha}
 % If you have no address to list, DELETE this whole line. \address{}{}{} fails
 % with "There's no line here to end" on every moderncv version.
-\address{[YOUR_ADDRESS]}{}{}
-\phone[mobile]{[YOUR_PHONE]}
-\email{[YOUR_EMAIL]}
-\extrainfo{\href{[YOUR_LINKEDIN_URL]}{LinkedIn}, \href{[YOUR_GITHUB_URL]}{GitHub}}
+\address{Inlet Beach, Florida, USA}{}{}
+\phone[mobile]{(205) 981-3910}
+\email{shawn4speed@gmail.com}
+\extrainfo{\href{https://linkedin.com/in/shawnmadadha}{LinkedIn}, \href{https://github.com/ShawnMadadha}{GitHub}}
 
 \begin{document}
 \makecvtitle
@@ -130,11 +130,51 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 **Create 2-3 profile statement templates for your main role types:**
 
 <!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+These are starting points, not finished text. Tailor the opening clause to the specific
+posting every time, and swap in the stack and metrics the posting actually cares about. Every
+factual claim must trace back to `01-candidate-profile.md`.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For Software Engineering (full-stack / backend) roles:**
+> Computer Science undergraduate at the University of Florida (3.8 GPA, BS expected May 2028)
+> who has shipped and operated production systems since age 14. Currently Co-Founder and CTO of
+> Chronos (formerly Geodo) until August 2026, where I owned the architecture of an AI-native GTM platform serving 3,000+ companies on
+> Next.js 15, TypeScript, and a pnpm monorepo backed by Drizzle over Aurora Serverless v2
+> Postgres, with SQS/Lambda event pipelines and AWS CDK provisioning. I am looking for a role
+> inside an established engineering organization specifically to learn large-codebase craft -
+> review culture, release engineering, and testing discipline - that founding solo cannot teach.
+> What I bring in exchange is someone who has already carried a system from architecture through
+> production observability and knows what breaks.
+
+**For AI / ML Engineering roles:**
+> Computer Science undergraduate (University of Florida, 3.8 GPA) building AI agent systems that
+> take real action rather than just generating text. I orchestrated four Google ADK agents over
+> live audio, database lookups, and autonomous navigation for a pediatric therapy robot in a
+> 36-hour sprint (HackUSF 2026 winner), and engineered a real-time safety pipeline on Gemini 2.0
+> Flash that cross-referenced prescriptions against allergy profiles and halted dangerous
+> medications mid-call. At Chronos I apply the same approach in production, where natural-language
+> commands drive pipeline management across 350M+ enriched leads. I work in Python and
+> TypeScript, use Claude Code as my daily development environment, and care most about the gap
+> between a demo that works and an agent that is safe to put in front of users.
+
+**For IT / Infrastructure / Cloud roles:**
+> Computer Science undergraduate (University of Florida, 3.8 GPA) with production infrastructure
+> experience on both sides of the fence. At Orlando Health I administered network infrastructure
+> across three hospital campuses with Active Directory, held 99.9% uptime for systems serving
+> 2,000+ medical staff, resolved 50+ tickets inside SLA, and automated routine maintenance in
+> Python and PowerShell to cut 15 hrs/week of manual work. At Chronos I owned the cloud side: AWS CDK
+> infrastructure as code, SQS/Lambda pipelines with dead-letter queues, Aurora Serverless v2, and
+> OpenTelemetry instrumentation for observability. I am comfortable being accountable for uptime
+> and for the scripts that protect it.
+
+**For Solutions / Sales Engineering roles:**
+> Computer Science undergraduate (University of Florida, 3.8 GPA) who has spent nine years on the
+> commercial side of technical work. I founded a web and AI automation studio at 14 and ran the
+> full cycle solo - scoping, building, and retaining clients with 100% on-time delivery - then
+> co-founded a rental business where I owned P&L and pricing through $225K+ in bookings. Today I
+> am CTO of Chronos (formerly Geodo), an AI-native GTM platform for B2B sales teams, so I build the tooling sales
+> organizations actually use. I placed 4th of 20 teams at the NSEC Florida Regional Sales
+> Engineering Competition. I can read a stack and read a room, and I would rather do both than
+> pick one.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 

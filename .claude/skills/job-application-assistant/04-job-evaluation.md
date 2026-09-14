@@ -60,9 +60,11 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** TypeScript/JavaScript, Next.js 15 and React, Python, FastAPI, SQL/Postgres, AWS (Aurora Serverless v2, Lambda, SQS, CDK, Secrets Manager), Drizzle, Tailwind, pnpm monorepos, AI agent engineering (Gemini 2.0, Google ADK, LangChain), OpenTelemetry and production observability, event-driven backends, agentic coding with Claude Code.
+
+**Moderate match areas:** Swift/SwiftUI and iOS, C/C++/C#/Java, computer vision (OpenCV, MediaPipe, YOLO), voice AI (Twilio, ElevenLabs), PowerShell and Active Directory, Google Cloud, Firebase, embedded work (ESP32), SAP S/4HANA, data analysis, technical team leadership.
+
+**Weak match areas:** Go, Rust, Kubernetes, Terraform, Android/Kotlin, Spark and large-scale data engineering, classical ML and deep-learning model *training* (his ML work is applied and API-driven, not research or training pipelines), formal security certifications, anything requiring an active security clearance. Leave these visible as gaps - never stuff them into a CV.
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for? Match on the function and nature of the work performed, not the literal job title - a "Data Consultant" and a "Data Scientist" role can be functionally identical.
@@ -74,9 +76,13 @@ Does work history align with what they're looking for? Match on the function and
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Full-stack product engineering on a TypeScript/AWS stack, AI agent and LLM application engineering, founding-engineer and 0-to-1 work, technical architecture ownership, B2B SaaS and GTM/sales-tech product work.
+
+**Moderate:** Backend and platform engineering, DevOps and cloud infrastructure, IT operations and systems administration in a regulated environment, iOS development, solutions and sales engineering, small-team technical leadership.
+
+**Entry-level:** Any role inside a large established engineering organization with mature process - he has led teams but never been a junior IC in one, which is precisely what he is seeking. Also entry-level: data engineering, ML research, security engineering, SRE on Kubernetes, and mobile Android.
+
+**Seniority calibration (important):** Shawn's *titles* read senior (CTO, Founder) but he is a rising undergraduate targeting internships. When scoring Experience Match, compare against the posting's actual expectations. For an internship or new-grad posting, his founder and CTO record should score very high, not be discounted for lacking corporate tenure. For a posting asking for 5+ years of professional employment, score honestly lower regardless of title, and do not let the C-level title inflate the number.
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -91,10 +97,21 @@ Does the role and company culture match the behavioral profile?
 **Red flags to research:** Department disorganization, work dominated by maintenance over development, poor chemistry with leadership, culture mismatches. Check reviews, media coverage, LinkedIn connections, and network contacts for insider perspective.
 
 ### 4. Location & Logistics (Pass/Fail + Notes)
-- Within commute range: PASS
-- Remote with occasional office: PASS
-- Requires relocation: FAIL (deal-breaker)
-- Frequent international travel: FLAG (discuss with user)
+Shawn **splits time between Inlet Beach, Florida and the San Francisco Bay Area** and is remote-first, searching US-wide. Both locations are real - his LinkedIn lists the Bay Area and his mailing address is in Florida.
+
+- Fully remote (US): **PASS** - the preferred case
+- Hybrid or on-site in the **San Francisco Bay Area** (SF, Peninsula, South Bay, Oakland): **PASS, any term.** He is there regularly. This is a large, high-value market - do not downgrade Bay Area roles as relocation-only.
+- Hybrid with an office in the Florida panhandle (Panama City ~30 min, Destin/Fort Walton Beach ~45 min): **PASS**
+- Hybrid or on-site anywhere in the US for a **summer internship**: **PASS** - he will relocate for a summer term
+- **SUPERSEDED 2026-09-12: Shawn attends UF REMOTELY.** He is not physically tied to Gainesville or to a class schedule, so school-year on-site and hybrid work is viable wherever he is living (Florida panhandle or the Bay Area), and **full-time roles do not conflict with his degree**. Score them normally.
+- Fully on-site five days a week with no remote or hybrid option, **school-year part-time or contract**: **FAIL** (deal-breaker)
+- Fully on-site five days a week, **summer internship**: **PASS**. Nearly every competitive US tech internship is on-site or near-daily hybrid for the term, so applying the remote-first preference here would exclude essentially the whole internship market. Relocating for a summer term *is* Shawn's stated accommodation for this, so on-site is the expected case, not an exception. The remote-first preference still breaks ties between two otherwise comparable internships.
+- Night shifts or rotating on-call: **FAIL** (deal-breaker)
+- Requires an active security clearance he does not hold: **FAIL** (deal-breaker)
+- Requires relocation outside the US, or frequent international travel: **FLAG** (discuss with user)
+- Visa sponsorship: not applicable, he is US-based and US-authorized
+
+**Do not auto-fail a posting for requiring relocation when the term is a summer internship.** That is the one case where relocation is acceptable.
 
 ### 5. Career Alignment & Motivation (0-100)
 Does this role advance career goals and contain tasks that energize?
@@ -107,19 +124,21 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Land a Summer 2027 software, AI/ML, or infrastructure internship at a company with real engineering scale, to learn mature practice from inside an established org
+- Deepen production depth in AI agent systems that take action, not just generate text
+- Learn large-codebase craft (code review culture, release engineering, testing discipline) that founding solo cannot teach
+- Build toward a senior full-stack or AI platform engineering role by graduation in May 2028, without giving up ownership-level scope
+- Keep leading engineering at Geodo alongside whatever role he takes
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- Tasks that energize: architecting a system end to end, building AI agents that take real action, shipping to real users fast, owning production monitoring and observability, untangling an ambiguous problem, talking directly to users or customers, making something measurably faster or cheaper
+- Tasks that drain: ticket queues and service-desk rotation (done at Orlando Health, delivered well, not where he is energized), maintenance-only work on a system he cannot change, narrowly scoped tasks handed down without context, long approval chains, work with no deployed outcome
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: Student, not dependent on this income as a sole livelihood, so he can be selective. But **unpaid, equity-only, and commission-only roles are a hard deal-breaker** - see the Deal-breakers list in CLAUDE.md. No pay floor is set above that: surface paid roles and let him judge each number.
+- **Flexibility**: Must fit a full University of Florida course load during fall and spring terms, so school-year work is part-time or contract only. Summer is open for a full-time internship. He also carries an ongoing CTO role at Geodo, so time-boxed and remote-friendly arrangements score higher. Night shifts and rotating on-call are deal-breakers.
+- **Professional development**: The single biggest draw is working inside an established engineering organization for the first time - mentorship, code review culture, and exposure to a codebase larger than one he built himself. Weight a posting that promises real mentorship and real ownership above one that promises only a prestigious logo.
 
 ### 6. Salary Benchmark (Optional)
 
