@@ -110,7 +110,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ### Deal-breakers
 - Unpaid positions, including equity-only or commission-only roles
-- Fully on-site with no remote or hybrid option
+- Fully on-site with no remote or hybrid option, **outside the Bay Area and the Florida panhandle**. Inside those two areas on-site is fine year-round (see Location above); this deal-breaker is about places he cannot physically be, not about on-site work as such
 - Roles built around night shifts or a rotating on-call pager
 - Roles requiring an active security clearance not currently held
 
