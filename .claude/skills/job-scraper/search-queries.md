@@ -1,7 +1,8 @@
 # Search Queries for Job Scraper
 
 Configured for **Shawn Madadha** - US market, remote-first, based in Inlet Beach, Florida.
-Target: **Summer 2027 internships** plus **part-time or contract work during the school year**.
+Target: **immediate Fall 2026 starts** (full-time, contract, or part-time) as the priority, plus
+**Summer 2027 internships** while that cycle is at peak season.
 
 ## Installed portal CLIs (primary for `/scrape`)
 
@@ -17,6 +18,10 @@ The `site:` query templates in this file are the **WebSearch fallback** - for po
 ## Timing note
 
 Summer internship recruiting in US tech runs far ahead of the work. Summer 2027 postings typically open between roughly August 2026 and January 2027, with the largest employers closing early and many using rolling review. Treat the current window as peak season and prioritize Priority 1 and 2 accordingly. Off-cycle and smaller companies post later, through spring 2027.
+
+That cycle is real but it is not the whole search. Chronos ended in August 2026 and Shawn attends UF
+remotely, so he is **available now** and a full-time role does not conflict with the degree. Immediate-start
+work (Priority 0) is the top tier; Summer 2027 internships run alongside it, not ahead of it.
 
 ## Search Sites
 
@@ -40,6 +45,34 @@ Secondary (company career pages via Google):
 Queries are grouped by priority. All are written in English (see Language scope above). Combine with `remote` as the default location term; add a specific metro only for the summer-relocation case.
 
 **Organize by function, not job title.** The same work carries different titles across companies (a "Software Engineer Intern" at one employer is a "Technical Intern", "Engineering Intern", or "SWE Co-op" at another). Each category below names the function and lists several title variants rather than betting a tier on one exact string.
+
+### Priority 0: Immediate-start full-time / contract (Fall 2026)
+
+**Top priority.** Available now, no graduation gate - remote UF enrollment means a full-time role and the
+degree coexist. Early-stage founding-engineer work is the closest match to how he actually operates: sole
+ownership of architecture through production observability, 0-to-1 ambiguity, direct user access. Screen
+these against the Deal-breakers in CLAUDE.md - equity-only and commission-only roles are excluded.
+
+```
+site:wellfound.com "founding engineer" remote
+site:jobs.ashbyhq.com "founding engineer" OR "founding full stack engineer"
+site:jobs.lever.co "founding engineer" remote
+site:boards.greenhouse.io "software engineer" "full stack" remote startup
+site:linkedin.com/jobs "founding engineer" remote United States
+site:linkedin.com/jobs "software engineer" "new grad" remote 2026
+site:linkedin.com/jobs "AI engineer" remote "member of technical staff"
+site:wellfound.com "full stack engineer" remote seed OR "pre-seed"
+site:linkedin.com/jobs "forward deployed engineer" remote
+site:ycombinator.com/companies jobs "founding engineer" remote
+```
+
+Contract and part-time variants for the same tier:
+
+```
+site:linkedin.com/jobs "contract software engineer" remote United States
+site:wellfound.com "contract engineer" remote
+site:linkedin.com/jobs "part time software engineer" OR "fractional engineer" remote
+```
 
 ### Priority 1: Software Engineering internships (full-stack / backend)
 
@@ -129,7 +162,7 @@ site:linkedin.com/jobs "growth engineer" intern remote
 
 Why each is worth a look:
 - **Developer relations / advocacy** - he already combines production engineering with client-facing communication, which is the exact DevRel blend and is rarely available in an undergraduate
-- **Founding engineer at an early-stage startup** - closest match to how he actually works, though it competes directly with his Geodo commitment on time
+- **Founding engineer at an early-stage startup** - closest match to how he actually works. No longer a scheduling conflict now that Chronos has ended, which is why this shape is promoted to Priority 0 above; the Priority 5 line is kept only for the adjacent titles
 - **Technical product management** - nine years of owning scoping, pricing, and client outcomes alongside the build
 - **Growth engineer** - GTM platform experience plus full-stack, a narrow and well-paid niche
 
@@ -141,11 +174,13 @@ Shawn is based in **Inlet Beach, Florida** (Walton County, panhandle) and search
 - Fully remote, US-based - any term
 
 **Acceptable (any term):**
+- Hybrid or on-site in the **San Francisco Bay Area** - SF, Peninsula, South Bay. He splits his time there and
+  is present regularly, so treat Bay Area on-site and hybrid as viable year-round, **not** relocation-only
 - Hybrid or on-site in Panama City, FL (~30 min)
 - Hybrid or on-site in Destin / Fort Walton Beach / Santa Rosa Beach, FL (~45 min)
 
 **Acceptable for a summer internship only (he will relocate for the term):**
-- Any US metro, including Seattle, the Bay Area, New York, Austin, Boston, Atlanta, Denver, Chicago
+- Any other US metro, including Seattle, New York, Austin, Boston, Atlanta, Denver, Chicago
 - Florida metros outside the panhandle: Orlando, Tampa, Jacksonville, Miami, Gainesville
 
 **Borderline:**
@@ -169,6 +204,7 @@ Only include jobs posted within the last 14 days, or with an application deadlin
 ## Adapting Queries
 
 If the user specifies a focus area, select queries from the matching category and also generate 2-3 custom queries for that focus:
+- `/scrape fulltime` or `/scrape founding` or `/scrape now` -> Priority 0
 - `/scrape software` or `/scrape swe` -> Priority 1
 - `/scrape ai` or `/scrape ml` -> Priority 2
 - `/scrape it` or `/scrape infra` or `/scrape cloud` -> Priority 3
