@@ -151,6 +151,20 @@ site:linkedin.com/jobs "technology specialist" OR "technical analyst" remote par
 
 ### Priority 4: Solutions / Sales Engineering and Technical Consulting
 
+**Run these as full-time queries, not only intern ones.** He placed 4th of 20 at the NSEC Florida
+Regional Sales Engineering Competition and ran client scoping solo for nine years, so pre-sales and
+solutions engineering are a genuine match rather than a fallback. Voice and AI-platform companies in
+particular want an SE who has built on the primitives they sell, which he has.
+
+```
+site:linkedin.com/jobs "solutions engineer" OR "pre-sales engineer" AI OR voice remote OR "San Francisco"
+site:linkedin.com/jobs "sales engineer" AI platform United States
+site:linkedin.com/jobs "AI solutions engineer" OR "forward deployed engineer" remote
+site:jobs.ashbyhq.com "solutions engineer"
+site:linkedin.com/jobs "developer advocate" OR "developer relations" AI remote
+```
+
+
 Adjacent direction with real supporting evidence: 4th of 20 at the NSEC Florida Regional Sales Engineering Competition, nine years of client-facing founder work, and a CTO role building GTM tooling for sales teams. Strong fit and under-contested by other CS undergraduates.
 
 ```
